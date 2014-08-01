@@ -1,4 +1,7 @@
-class phpldapadmin::config () {
+class phpldapadmin::config (
+  $serverName = $phpldapadmin::serverName,
+  $base       = $phpldapadmin::base,
+) {
   File {
     ensure => present,
     owner  => 'root',
